@@ -153,6 +153,11 @@ namespace FrmProductos
             {
                 // Cerrar la conexión
                 conn.Close();
+                // Limpiamos los textbox
+                txtNombreCompleto.Text = "";
+                txtCorreo.Text = "";
+                txtValoracion.Text = "";
+                lstProductos.SelectedIndex = -1;
             }
 
         }
